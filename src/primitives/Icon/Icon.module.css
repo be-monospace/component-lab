@@ -1,0 +1,11 @@
+.icon { display: inline-block; flex-shrink: 0; }
+
+.tone-inherit { color: inherit; }
+.tone-default { color: var(--color-icon-default); }
+.tone-muted { color: var(--color-icon-muted); }
+.tone-inverse { color: var(--color-icon-inverse); }
+.tone-accent { color: var(--color-icon-accent); }
+.tone-info { color: var(--color-icon-info); }
+.tone-success { color: var(--color-icon-success); }
+.tone-warning { color: var(--color-icon-warning); }
+.tone-danger { color: var(--color-icon-danger); }

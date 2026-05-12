@@ -1,0 +1,17 @@
+/* ────────────────────────────────────────────────────────────
+ * Lab UI — token entry point.
+ *
+ * Three tiers + one theme override. Consumers import this
+ * single file to load the whole system:
+ *
+ *   import '@component-lab/core/tokens.css';
+ *
+ * Apply a theme by setting a class on <body> or any ancestor:
+ *
+ *   <body class="theme-dark">
+ * ──────────────────────────────────────────────────────────── */
+
+@import './primitives.css';
+@import './semantics.css';
+@import './component.css';
+@import './dark.css';

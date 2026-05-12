@@ -1,0 +1,112 @@
+/* ────────────────────────────────────────────────────────────
+ * COMPONENT TOKENS — per-component resolved values.
+ *
+ * The tier components actually consume. References semantics.
+ * Adding a new component? Add its tokens here.
+ * ──────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Tabs ───────────────────────────────────────────────── */
+  --tabs-bg-default: var(--color-bg-surface);
+  --tabs-bg-hover: var(--color-bg-muted);
+  --tabs-bg-selected: var(--color-bg-info);
+  --tabs-bg-disabled: var(--color-bg-subtle);
+
+  --tabs-label-default: var(--color-text-default);
+  --tabs-label-selected: var(--color-text-inverse);
+  --tabs-label-disabled: var(--color-text-subtle);
+
+  --tabs-border-default: var(--color-border-subtle);
+  --tabs-border-selected: var(--color-border-focus);
+  --tabs-border-disabled: var(--color-border-subtle);
+
+  --space-tabs-padding-x: var(--space-6);
+  --space-tabs-padding-y: var(--space-4);
+  --space-tabs-gap: var(--space-2);
+  --space-tabs-indicator: var(--space-1);
+
+  /* ── Alert ──────────────────────────────────────────────── */
+  /* Per status × variant. `box` = tinted, `header` = filled. */
+  --alert-bg-info: var(--color-bg-info-subtle);
+  --alert-bg-info-strong: var(--color-bg-info);
+  --alert-bg-success: var(--color-bg-success-subtle);
+  --alert-bg-success-strong: var(--color-bg-success);
+  --alert-bg-warning: var(--color-bg-warning-subtle);
+  --alert-bg-warning-strong: var(--color-bg-warning);
+  --alert-bg-danger: var(--color-bg-danger-subtle);
+  --alert-bg-danger-strong: var(--color-bg-danger);
+  --alert-bg-neutral: var(--color-bg-muted);
+  --alert-bg-neutral-strong: var(--color-bg-inverse);
+
+  --alert-border-info: var(--color-border-info);
+  --alert-border-success: var(--color-border-success);
+  --alert-border-warning: var(--color-border-warning);
+  --alert-border-danger: var(--color-border-danger);
+  --alert-border-neutral: var(--color-border-default);
+
+  --alert-text-on-subtle: var(--color-text-default);
+  --alert-text-on-strong: var(--color-text-inverse);
+
+  --alert-icon-info: var(--color-icon-info);
+  --alert-icon-success: var(--color-icon-success);
+  --alert-icon-warning: var(--color-icon-warning);
+  --alert-icon-danger: var(--color-icon-danger);
+  --alert-icon-neutral: var(--color-icon-default);
+  --alert-icon-on-strong: var(--color-icon-inverse);
+
+  --space-alert-padding-x: var(--space-6);
+  --space-alert-padding-y: var(--space-6);
+  --space-alert-gap-icon-headline: var(--space-4);
+  --space-alert-gap-headline-body: var(--space-2);
+  --space-alert-gap-body-actions: var(--space-6);
+
+  --radius-alert: var(--radius-md);
+  --border-width-alert: var(--border-width-thin);
+
+  /* ── Badge ──────────────────────────────────────────────── */
+  --badge-bg-info: var(--color-bg-info-subtle);
+  --badge-bg-success: var(--color-bg-success-subtle);
+  --badge-bg-warning: var(--color-bg-warning-subtle);
+  --badge-bg-danger: var(--color-bg-danger-subtle);
+  --badge-bg-neutral: var(--color-bg-muted);
+
+  --badge-label-info: var(--color-text-accent);
+  --badge-label-success: var(--color-text-success);
+  --badge-label-warning: var(--color-text-warning);
+  --badge-label-danger: var(--color-text-danger);
+  --badge-label-neutral: var(--color-text-default);
+
+  --badge-icon-info: var(--color-icon-info);
+  --badge-icon-success: var(--color-icon-success);
+  --badge-icon-warning: var(--color-icon-warning);
+  --badge-icon-danger: var(--color-icon-danger);
+  --badge-icon-neutral: var(--color-icon-default);
+
+  /* Per size: padding, gap, typography. */
+  --space-badge-xs-padding-x: var(--space-2);
+  --space-badge-xs-padding-y: var(--space-1);
+  --space-badge-xs-gap: var(--space-1);
+  --typography-badge-xs: var(--typography-caption);
+
+  --space-badge-sm-padding-x: var(--space-3);
+  --space-badge-sm-padding-y: var(--space-2);
+  --space-badge-sm-gap: var(--space-2);
+  --typography-badge-sm: var(--typography-caption);
+
+  --space-badge-md-padding-x: var(--space-4);
+  --space-badge-md-padding-y: var(--space-2);
+  --space-badge-md-gap: var(--space-2);
+  --typography-badge-md: var(--typography-label);
+
+  --space-badge-lg-padding-x: var(--space-5);
+  --space-badge-lg-padding-y: var(--space-3);
+  --space-badge-lg-gap: var(--space-3);
+  --typography-badge-lg: var(--typography-body-sm);
+
+  --space-badge-xl-padding-x: var(--space-6);
+  --space-badge-xl-padding-y: var(--space-4);
+  --space-badge-xl-gap: var(--space-3);
+  --typography-badge-xl: var(--typography-body-md);
+
+  --radius-badge: var(--radius-pill);
+}

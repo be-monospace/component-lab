@@ -1,0 +1,69 @@
+.tablist {
+  display: inline-flex;
+  align-items: stretch;
+  border-bottom: var(--border-width-regular) solid var(--tabs-border-default);
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-tabs-gap);
+  padding:
+    var(--space-tabs-padding-y)
+    var(--space-tabs-padding-x)
+    calc(var(--space-tabs-padding-y) - var(--space-tabs-indicator));
+
+  margin-bottom: calc(-1 * var(--border-width-regular));
+  border: 0;
+  border-bottom: var(--border-width-regular) solid transparent;
+  background: var(--tabs-bg-default);
+  color: var(--tabs-label-default);
+  cursor: pointer;
+  appearance: none;
+  white-space: nowrap;
+  font: var(--typography-label);
+
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+/* Real interaction states + workbench QA equivalents.
+   data-force-state is set by the workbench's StatesView to render
+   pseudo-class states statically. See CLAUDE.md for the contract. */
+.tab:hover:not([aria-disabled='true']),
+.tab[data-force-state='hover']:not([aria-disabled='true']) {
+  background: var(--tabs-bg-hover);
+}
+
+.tab:focus-visible,
+.tab[data-force-state='focus'] {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: -2px;
+}
+
+.tab:active,
+.tab[data-force-state='active'] {
+  background: var(--tabs-bg-selected);
+}
+
+.tab[aria-selected='true'] {
+  border-bottom-color: var(--tabs-border-selected);
+}
+
+.tab[aria-disabled='true'],
+.tab[data-force-state='disabled'] {
+  background: var(--tabs-bg-disabled);
+  color: var(--tabs-label-disabled);
+  cursor: not-allowed;
+  border-bottom-color: var(--tabs-border-disabled);
+}
+
+/* Solid variant — selected tab gets a filled background. */
+.variant-solid .tab[aria-selected='true'] {
+  background: var(--tabs-bg-selected);
+  color: var(--tabs-label-selected);
+}
+
+.label {
+  display: inline-block;
+}

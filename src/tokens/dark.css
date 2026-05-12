@@ -1,0 +1,58 @@
+/* ────────────────────────────────────────────────────────────
+ * DARK THEME — overrides for the semantic + component tiers.
+ *
+ * Primitives stay unchanged. Only the meaning of each role
+ * shifts. Apply via `<body class="theme-dark">` or any ancestor.
+ * ──────────────────────────────────────────────────────────── */
+
+.theme-dark {
+  /* ── Semantic text ──────────────────────────────────────── */
+  --color-text-default: var(--gray-50);
+  --color-text-muted: var(--gray-300);
+  --color-text-subtle: var(--gray-400);
+  --color-text-inverse: var(--gray-900);
+  --color-text-accent: var(--blue-200);
+  --color-text-success: var(--green-100);
+  --color-text-warning: var(--amber-100);
+  --color-text-danger: var(--red-100);
+
+  /* ── Semantic backgrounds ───────────────────────────────── */
+  --color-bg-surface: var(--gray-900);
+  --color-bg-muted: var(--gray-800);
+  --color-bg-subtle: var(--gray-800);
+  --color-bg-inverse: var(--white);
+
+  --color-bg-info: var(--blue-500);
+  --color-bg-info-subtle: var(--blue-900);
+  --color-bg-success: var(--green-500);
+  --color-bg-success-subtle: var(--green-900);
+  --color-bg-warning: var(--amber-500);
+  --color-bg-warning-subtle: var(--amber-900);
+  --color-bg-danger: var(--red-500);
+  --color-bg-danger-subtle: var(--red-900);
+
+  /* ── Semantic borders ───────────────────────────────────── */
+  --color-border-subtle: var(--gray-700);
+  --color-border-default: var(--gray-600);
+  --color-border-strong: var(--gray-400);
+
+  /* ── Semantic icons ─────────────────────────────────────── */
+  --color-icon-default: var(--gray-300);
+  --color-icon-muted: var(--gray-400);
+  --color-icon-inverse: var(--gray-900);
+
+  /* ── Component overrides where the dark mapping doesn't
+     fall through cleanly from semantics. ─────────────────── */
+
+  /* Badge labels read better with lighter values on dark surfaces. */
+  --badge-label-info: var(--blue-200);
+  --badge-label-success: var(--green-100);
+  --badge-label-warning: var(--amber-100);
+  --badge-label-danger: var(--red-100);
+  --badge-label-neutral: var(--gray-50);
+
+  --badge-icon-info: var(--blue-200);
+  --badge-icon-success: var(--green-100);
+  --badge-icon-warning: var(--amber-100);
+  --badge-icon-danger: var(--red-100);
+}

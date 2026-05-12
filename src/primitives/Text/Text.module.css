@@ -1,0 +1,5 @@
+.text { margin: 0; }
+.align-start { text-align: start; }
+.align-center { text-align: center; }
+.align-end { text-align: end; }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
